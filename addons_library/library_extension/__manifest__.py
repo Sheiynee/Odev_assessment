@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 {
     "name": "Library Extension",
-    "version": "17.0.3.0",
+    "version": "17.0.4.0",
     "depends": [
-        "base"
+        "base", "library"
     ],
     "external_dependencies": {},
     "author": "Odev Solutions",
