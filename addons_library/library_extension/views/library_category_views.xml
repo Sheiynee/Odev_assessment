@@ -33,6 +33,11 @@
     </record>
     
         <menuitem
+        id="library_menu_main"
+        name="Library"
+        sequence="10"/>
+
+        <menuitem
         id="library_menu_category"
         name="Book Category"
         parent="library_menu_main"
