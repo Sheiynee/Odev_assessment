@@ -39,5 +39,5 @@
         name="Book Category"
         parent="library.library_menu_main"
         action="library_category_action"
-        sequence="10"/>
+        sequence="12"/>
 </odoo>
