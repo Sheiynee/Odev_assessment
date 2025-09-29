@@ -1,7 +1,19 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="view_library_category_form" model="ir.ui.view">
-        <field name="name">library.category.form</field>
+    <!-- Tree View -->
+    <record id="library_category_tree_view" model="ir.ui.view">
+        <field name="name">library.book.category.tree</field>
+        <field name="model">library.book.category</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="library_category_form_view" model="ir.ui.view">
+        <field name="name">library.book.category.form</field>
         <field name="model">library.book.category</field>
         <field name="arch" type="xml">
             <form>
@@ -14,30 +26,21 @@
         </field>
     </record>
 
-    <record id="view_library_category_tree" model="ir.ui.view">
-        <field name="name">library.category.tree</field>
-        <field name="model">library.book.category</field>
-        <field name="arch" type="xml">
-            <tree>
-                <field name="name"/>
-            </tree>
-        </field>
-    </record>
-
+    <!-- Action -->
     <record id="library_category_action" model="ir.actions.act_window">
-        <field name="name">Library Categories</field>
+        <field name="name">Book Categories</field>
         <field name="res_model">library.book.category</field>
         <field name="view_mode">tree,form</field>
-        <field name="domain">[]</field>
-        <field name="context">{}</field>
     </record>
-    
-        <menuitem
+
+    <!-- Main Menu -->
+    <menuitem
         id="library_menu_main"
         name="Library"
         sequence="10"/>
 
-        <menuitem
+    <!-- Submenu -->
+    <menuitem
         id="library_menu_category"
         name="Book Category"
         parent="library_menu_main"
