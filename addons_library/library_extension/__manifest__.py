@@ -3,7 +3,7 @@
     "name": "Library Extension",
     "version": "17.0.1.0",
     "depends": [
-        "base", "Library"
+        "base", "library"
     ],
     "external_dependencies": {},
     "author": "Odev Solutions",
