@@ -1,4 +1,5 @@
 from odoo import models, fields, api
+from odoo.exceptions import ValidationError
 
 class LibraryCategory(models.Model):
     _name = "library.book.category"
@@ -10,4 +11,5 @@ class LibraryCategory(models.Model):
     @api.depends('name')
     def _compute_unique_name(self):
         for record in self:
-            record.name = record.name
+            if record.name == record.name:
+                raise UserError("The Category name is already been used")
