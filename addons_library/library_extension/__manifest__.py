@@ -15,7 +15,8 @@
     "category": "Extra Tools",
     "data": [
         'views/library_book_form_inherit.xml',
-        'views/library_category_views.xml'
+        'views/library_category_views.xml',
+        'security/ir.model.access.csv'
     ],
     "installable": True,
     "application": False,
