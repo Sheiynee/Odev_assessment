@@ -21,6 +21,7 @@
                 <field name="author_id"/>
                 <field name="category_id" widget="many2many_tags"/>
             </xpath>
+        </field>
     </record>
 
     <menuitem
