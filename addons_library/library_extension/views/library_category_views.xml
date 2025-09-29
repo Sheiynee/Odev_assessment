@@ -37,7 +37,7 @@
     <menuitem
         id="library_menu_category"
         name="Book Category"
-        parent="library_menu_main"
+        parent="library.library_menu_main"
         action="library_category_action"
         sequence="10"/>
 </odoo>

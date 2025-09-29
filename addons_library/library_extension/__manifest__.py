@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     "name": "Library Extension",
-    "version": "17.0.4.0",
+    "version": "17.0.5.0",
     "depends": [
         "base", "library"
     ],
@@ -16,7 +16,6 @@
     "data": [
         'views/library_book_form_inherit.xml',
         'views/library_category_views.xml',
-        'views/library_menus.xml',
         'security/ir.model.access.csv'
     ],
     "installable": True,
