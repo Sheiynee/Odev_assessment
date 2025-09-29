@@ -33,12 +33,6 @@
         <field name="view_mode">tree,form</field>
     </record>
 
-    <!-- Main Menu -->
-    <menuitem
-        id="library_menu_main"
-        name="Library"
-        sequence="10"/>
-
     <!-- Submenu -->
     <menuitem
         id="library_menu_category"
