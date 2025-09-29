@@ -2,7 +2,7 @@ from odoo import models, fields, api
 from odoo.exceptions import ValidationError
 
 class LibraryCategory(models.Model):
-    __name__ = "library.book.category"
+    _name = "library.book.category"
     _description = "Library Book Category"
     _order = "name asc"
     
