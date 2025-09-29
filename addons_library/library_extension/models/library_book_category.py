@@ -1,7 +1,7 @@
 from odoo import models, fields, api
 
 class LibraryCategory(models.Model):
-    __name = "library.book.category"
+    _name = "library.book.category"
     _description = "Library Book Category"
     _order = "name asc"
     
