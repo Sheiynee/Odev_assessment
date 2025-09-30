@@ -14,6 +14,6 @@ class LibraryCategory(models.Model):
     @api.constrains('name')
     def _check_unique_name(self):
         for record in self:
-            existing = self.search([('id', '!=', rec.id), ('name', 'ilike', rec.name)], limit=1)
+            existing = self.search([('id', '!=', record.id), ('name', 'ilike', record.name)], limit=1)
             if existing:
                 raise ValidationError("The Category name already exists!")
